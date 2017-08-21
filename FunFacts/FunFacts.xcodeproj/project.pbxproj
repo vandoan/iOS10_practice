@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		031ACF871F4B7D0B0096F65B /* BackgroundColorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031ACF861F4B7D0B0096F65B /* BackgroundColorProvider.swift */; };
 		03DB4D8A1F464421008B05A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DB4D891F464421008B05A1 /* AppDelegate.swift */; };
 		03DB4D8C1F464421008B05A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DB4D8B1F464421008B05A1 /* ViewController.swift */; };
 		03DB4D8F1F464421008B05A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DB4D8D1F464421008B05A1 /* Main.storyboard */; };
 		03DB4D911F464421008B05A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03DB4D901F464421008B05A1 /* Assets.xcassets */; };
 		03DB4D941F464421008B05A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DB4D921F464421008B05A1 /* LaunchScreen.storyboard */; };
+		03DB4D9C1F467621008B05A1 /* FactProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DB4D9B1F467621008B05A1 /* FactProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		031ACF861F4B7D0B0096F65B /* BackgroundColorProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundColorProvider.swift; sourceTree = "<group>"; };
 		03DB4D861F464421008B05A1 /* FunFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03DB4D891F464421008B05A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03DB4D8B1F464421008B05A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		03DB4D901F464421008B05A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03DB4D931F464421008B05A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03DB4D951F464421008B05A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03DB4D9B1F467621008B05A1 /* FactProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				03DB4D901F464421008B05A1 /* Assets.xcassets */,
 				03DB4D921F464421008B05A1 /* LaunchScreen.storyboard */,
 				03DB4D951F464421008B05A1 /* Info.plist */,
+				03DB4D9B1F467621008B05A1 /* FactProvider.swift */,
+				031ACF861F4B7D0B0096F65B /* BackgroundColorProvider.swift */,
 			);
 			path = FunFacts;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			files = (
 				03DB4D8C1F464421008B05A1 /* ViewController.swift in Sources */,
 				03DB4D8A1F464421008B05A1 /* AppDelegate.swift in Sources */,
+				031ACF871F4B7D0B0096F65B /* BackgroundColorProvider.swift in Sources */,
+				03DB4D9C1F467621008B05A1 /* FactProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +307,7 @@
 				03DB4D9A1F464421008B05A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

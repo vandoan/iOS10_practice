@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,25 +22,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Interesting facts here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNK-yH-3lv">
-                                <rect key="frame" x="16" y="150" width="343" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xej-75-0Bd">
-                                <rect key="frame" x="119" y="310" width="137" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Another fact"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xej-75-0Bd">
+                                <rect key="frame" x="36" y="540" width="303" height="47"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="oRP-uf-dsm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Another fact">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="showFact" destination="BYZ-38-t0r" eventType="touchUpInside" id="YKW-d2-MIm"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ebs-73-Xbr">
+                                <rect key="frame" x="36" y="87" width="129" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNK-yH-3lv">
+                                <rect key="frame" x="20" y="279" width="334" height="110"/>
+                                <string key="text"> "Mammoths still walked the Earth when the Great Pyramid was being built."
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.40220238605932701" green="0.7825047560298859" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JNK-yH-3lv" firstAttribute="top" secondItem="Ebs-73-Xbr" secondAttribute="bottom" constant="169" id="1GJ-9E-XH8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xej-75-0Bd" secondAttribute="trailing" constant="20" id="D8M-Jx-p9Q"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xej-75-0Bd" secondAttribute="bottom" constant="80" id="HUp-9j-bMG"/>
+                            <constraint firstItem="JNK-yH-3lv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="N5x-Qh-lJm"/>
+                            <constraint firstItem="Ebs-73-Xbr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="OZy-tt-xRt"/>
+                            <constraint firstItem="xej-75-0Bd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="TEm-cr-gjm"/>
+                            <constraint firstItem="xej-75-0Bd" firstAttribute="centerX" secondItem="JNK-yH-3lv" secondAttribute="centerX" id="YbY-Y2-pgT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xej-75-0Bd" secondAttribute="bottom" constant="80" id="kBw-ir-HN2"/>
+                            <constraint firstItem="JNK-yH-3lv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="s5G-R5-c5I"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="funFactButton" destination="xej-75-0Bd" id="3er-Va-soD"/>
                         <outlet property="funFactLabel" destination="JNK-yH-3lv" id="Si1-JA-vDo"/>
                     </connections>
                 </viewController>
